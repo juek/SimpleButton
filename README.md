@@ -10,7 +10,7 @@ Version 1.1 is almost a complete rewrite and &hellip;
 * still needs some testing before replacing ver 1.0.1 on Typesettercms.com
 
 See also 
-* [Plugin page on Typesettercms.com](https://www.typesettercms.com/Plugins/302_Simple_Button) 
+* [Plugin page (ver 1.0.1) on Typesettercms.com](https://www.typesettercms.com/Plugins/302_Simple_Button) 
 * [Typesetter Home](http://www.typesettercms.com)
 * [Typesetter on GitHub](https://github.com/Typesetter/Typesetter)
 
@@ -22,8 +22,8 @@ See also
 
 ## Manual Installation / Upgrade from ver 1.0.1 ##
 1. Download the [master ZIP archive](https://github.com/juek/SimpleButton/archive/master.zip)
-2. Upload the extracted folder 'SimpleButtonr-master' to your server into the /addons directory
-3. Install using Typesetter's Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Available &rarr; Simple Button
+2. Upload the extracted folder 'SimpleButton-master' to your server into the /addons directory
+3. Install using Typesetter's Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Available &rarr; Simple Button OR
 4. Upgrade installed 1.0.1 via Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Simple Button &rarr; Options &rarr; Upgrade
 
 ## License
