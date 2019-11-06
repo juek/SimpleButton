@@ -1,0 +1,32 @@
+/**
+ * ########################################################################
+ * CSS stylesheet for Typesetter CMS plugin Simple Button
+ * Author: J. Krausz
+ * Date: 2019-10-22
+ * Version 1.1
+ * ########################################################################
+ */
+
+table#gpE_SB_classItems td:first-child{
+padding-left:24px;
+}
+
+table#gpE_SB_classItems tr.gpE_SB_classItem td:first-child{
+background:transparent url('img/draghandle.png') 4px center no-repeat;
+cursor:move;
+}
+
+table#gpE_SB_classItems a.gpbutton{
+font-size:14px;
+line-height:20px;
+font-weight:bold;
+padding:2px 5px;
+position:relative;
+}
+
+table#gpE_SB_classItems ::-webkit-input-placeholder,
+table#gpE_SB_classItems ::-moz-placeholder,
+table#gpE_SB_classItems ::-ms-input-placeholder,
+table#gpE_SB_classItems ::placeholder{
+font-style:italic;
+}

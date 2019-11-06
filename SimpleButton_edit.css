@@ -1,0 +1,294 @@
+/**
+ * ########################################################################
+ * CSS stylesheet for Typesetter CMS plugin Simple Button
+ * Editor Component
+ * Author: J. Krausz
+ * Date: 2019-10-22
+ * Version 1.1
+ * ########################################################################
+ */
+
+
+/* SimpleButton editor css*/
+
+.sb-option-area {
+position:relative;
+}
+
+.sb-option-area,
+.sb-option-area button,
+.sb-option-area input,
+.sb-option-area textarea,
+.sb-option-area * {
+-webkit-box-sizing:border-box!important;
+-moz-box-sizing:border-box!important;
+-ms-box-sizing:border-box!important;
+-o-box-sizing:border-box!important;
+box-sizing:border-box!important;
+letter-spacing:normal!important;
+}
+
+.sb-option-area .fa{
+font-size:14px!important;
+}
+
+.editor-ctl-box{
+display:block;
+position:relative;
+overflow:hidden;
+background:#fff;
+border:1px solid rgba(0,0,0,0.25);
+border-radius:3px;
+margin:3px 0 0 0;
+color:#555;
+}
+
+.sb-option-areabutton{
+cursor:pointer;
+}
+
+.sb-option-area label{
+position:relative;
+margin:0;
+}
+
+.sb-option-area label>*{
+vertical-align:middle;
+}
+
+.sb-option-area .editor-ctl-header,
+.sb-option-area .editor-ctl-footer{
+display:block;
+background:#f8f8f8;
+padding:4px 6px;
+color:#555;
+}
+
+.sb-option-area .editor-ctl-header{
+border-bottom:1px solid rgba(0,0,0,0.125);
+}
+
+.sb-option-area .editor-ctl-footer{
+border-top:1px solid rgba(0,0,0,0.125);
+}
+
+.sb-option-area input:not([type="checkbox"]):not([type="radio"]),
+.sb-option-area select,
+.sb-option-area button,
+.sb-option-area textarea{
+display:block;
+box-shadow:none;
+background-color:none;
+border:none;
+padding:4px 6px;
+width:100%;
+}
+
+.sb-option-area button{
+background:#f1f1f1;
+background:-moz-linear-gradient(top, #fff 0%, #f1f1f1 100%);
+background:-webkit-linear-gradient(top, #fff 0%,#f1f1f1 100%);
+background:linear-gradient(to bottom, #fff 0%,#f1f1f1 100%);
+color:#555;
+cursor:pointer;
+}
+
+.sb-option-area select{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+background:transparent url(img/select_arr.png) right center no-repeat;
+background-size:22px 16px;
+padding:4px 26px 4px 6px;
+}
+.sb-option-area select::-ms-expand{
+display:none; 
+}
+
+.sb-option-area input[type='checkbox'],
+.sb-option-area input[type='radio']{
+height:14px;
+width:16px!important;
+margin:0 0 0 -20px;
+}
+
+.sb-option-area input[type='checkbox'] + span,
+.sb-option-area input[type='radio'] + span{
+font-family:FontAwesome!important;
+font-size:14px!important;
+display:inline-block;
+margin:0 6px 0 6px;
+cursor:pointer;
+}
+.sb-option-area input[type='checkbox'] + span:before{
+content:"\f204"; 
+}
+.sb-option-area input[type='checkbox']:checked + span:before{
+content:"\f205"; 
+}
+.sb-option-area input[type='radio'] + span:before{
+content:"\f1db";
+}
+.sb-option-area input[type='radio']:checked + span:before { 
+content:"\f111";
+}
+
+.sb-option-area .ctl-input-iconbutton input:not([type='checkbox']):not([type='radio']){
+display:inline-block!important;
+width:calc(100% - 32px)!important;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+.sb-option-area .ctl-input-iconbutton input + button{
+display:inline-block!important;
+width:32px!important;
+border-left:1px solid rgba(0,0,0,0.125);
+}
+
+.sb-option-area .ctl-iconbutton-input-iconbutton input{
+display:inline-block!important;
+width:calc(100% - 64px)!important;
+}
+.sb-option-area .ctl-iconbutton-input-iconbutton button{
+display:inline-block!important;
+width:32px!important;
+border-right:1px solid rgba(0,0,0,0.125);
+}
+
+.sb-option-area .ctl-iconbutton-input-iconbutton input + button{
+border-left:1px solid rgba(0,0,0,0.125);
+border-right:none;
+}
+
+.sb-option-area i.sb-no-icon{
+color:#ccc;
+display:inline-block;
+font-size:14px;
+line-height:1;
+font-family:FontAwesome!important;
+font-style:normal;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+.sb-option-area i.sb-no-icon:before{
+content: "\f024"; /* fa-flag */
+}
+
+.sb-option-area .sb-fa-icon-select{
+display:block;
+position:absolute;
+top:28px;
+left:0;
+right:0;
+z-index:100;
+background:#fff;
+border-radius:3px;
+padding:6px;
+border:1px solid rgba(0,0,0,0.25);
+box-shadow:0 1px 3px rgba(0,0,0,0.25);
+}
+
+.sb-option-area .sb-fa-icon-select:before,
+.sb-option-area .sb-fa-icon-select:after{
+content:'';
+position:absolute;
+top:-7px;
+border-bottom:7px dashed #fff;
+border-left:7px dashed transparent;
+border-right:7px dashed transparent;
+}
+.sb-option-area .sb-fa-icon-select:before{
+border-bottom-color:rgba(0,0,0,0.25);
+top:-8px;
+}
+.sb-option-area .sb-fa-icon-select-before:before,
+.sb-option-area .sb-fa-icon-select-before:after{
+left:10px;
+}
+.sb-option-area .sb-fa-icon-select-after:before,
+.sb-option-area .sb-fa-icon-select-after:after{
+right:10px;
+}
+
+.sb-option-area .sb-fa-icon-select > label{
+overflow:hidden;
+margin-bottom:4px;
+}
+
+.sb-option-area .sb-fa-icon-select select{
+border:1px solid rgba(0,0,0,0.125);
+border-radius:3px;
+margin-bottom:4px;
+}
+
+.sb-option-area .sb-fa-icon-select button{
+border:1px solid rgba(0,0,0,0.125);
+border-radius:3px;
+display:inline-block;
+width:49%;
+}
+
+.sb-option-area .sb-fa-icon-select button:last-of-type{
+margin-left:2%;
+}
+
+.sb-option-area .sb-fa-icon-select input.fa-icon-select-iconSearch{
+display:block;
+width:100%!important;
+border:1px solid rgba(0,0,0,0.125);
+border-bottom:none;
+border-radius:3px 3px 0 0;
+margin:6px 0 0 0;
+}
+
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist{
+position:relative;
+background:#ddd;
+border-radius:0 0 3px 3px;
+max-height:159px;
+overflow-x:hidden!important;
+overflow-y:auto!important;
+border:1px solid rgba(0,0,0,0.125);
+padding:2px;
+margin:0 0 6px 0;
+}
+
+.sb-option-area .sb-no-icon:before{
+content:" ";
+display:inline-block;
+}
+
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist > li {
+display:inline-block;
+position:relative;
+margin:1px 2px 0 2px;
+overflow:hidden;
+}
+
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist > li label > i{
+display:block;
+background-color:#fff;
+border-radius:3px;
+width:22px;
+height:22px;
+text-align:center;
+line-height:22px!important;
+}
+
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist > li > label > input{
+display:none;
+}
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist > li > label > input:checked + i{
+background-color:#1FA67A;
+color:#fff;
+}
+
+.sb-option-area .sb-fa-icon-select ul.fa-icon-select-iconlist > li label > i.sb-no-icon:before{
+content:"\00a0";
+display:block;
+background-image:url('img/iconselect-no-icon.png');
+background-position:center center;
+background-repeat:no-repeat;
+}

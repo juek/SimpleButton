@@ -1,0 +1,86 @@
+/**
+ * ########################################################################
+ * CSS stylesheet for Typesetter CMS plugin Simple Button
+ * Author: J. Krausz
+ * Date: 2019-10-22
+ * Version 1.1
+ * ########################################################################
+ */
+
+.filetype-simple_button {
+position:relative;
+}
+
+.filetype-simple_button .sb-wrapper {
+position:relative;
+}
+
+.filetype-simple_button:not(.d-flex) .sb-wrapper {
+height:100%;
+}
+
+.filetype-simple_button:not(.d-flex) .sb-wrapper:before {
+content:"";
+width:0;
+display:inline-block;
+height:100%;
+}
+
+.filetype-simple_button:not(.d-flex) .btn {
+display:inline-block!important;
+}
+
+.filetype-simple_button .btn{
+position:relative;
+overflow:hidden;
+text-overflow:ellipsis;
+max-width:100%;
+}
+
+/* the gpclear div interferes with some alignement rules, so we hide it */
+.filetype-simple_button .gpclear {
+display:none!important;
+}
+
+/* Firefox hack to prevent overflow-ellipsis-bug triggered by rotated(ing) elements requiring extra space */
+@-moz-document url-prefix(){
+  .btn span.sb-buttontext:not(:empty) + i.fa-spin {
+  margin-right:0.3em;
+  }
+}
+
+.btn i.fa + span.sb-buttontext:not(:empty),
+.btn span.sb-buttontext:not(:empty) + i.fa {
+margin-left:0.5em;
+}
+
+/* HORIZONTAL ALIGNMENT */
+.sb-wrapper.sb-left { text-align:left; margin:0 auto 0 0!important; }
+.sb-wrapper.sb-left .btn { margin:0 auto 0 0; }
+.sb-wrapper.sb-center { text-align:center; margin:0 auto!important; }
+.sb-wrapper.sb-center .btn { margin:0 auto; }
+.sb-wrapper.sb-right { text-align:right; margin:0 0 0 auto!important; }
+.sb-wrapper.sb-right .btn { margin:0 0 0 auto; }
+.sb-wrapper.sb-fullwidth .btn { width:100%; }
+.sb-wrapper .btn-block { width:100%; }
+
+
+/* VERTICAL ALIGNMENT */
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-top, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-top:before, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-top .btn { 
+vertical-align:top; 
+}
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-middle, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-middle:before, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-middle .btn { 
+vertical-align:middle;
+}
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-bottom, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-bottom:before, 
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-bottom .btn {
+vertical-align:bottom;
+}
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-fullheight { display:table; margin:0 auto; table-layout:fixed; } /* table-layout:fixed is needed for proper overflow handling */
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-fullheight:before { display:none; }
+.filetype-simple_button:not(.d-flex) .sb-wrapper.sb-fullheight .btn { display:table-cell!important; vertical-align:middle; }
