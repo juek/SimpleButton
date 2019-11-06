@@ -24,7 +24,7 @@ See also
 1. Download the [master ZIP archive](https://github.com/juek/SimpleButton/archive/master.zip)
 2. Upload the extracted folder 'SimpleButton-master' to your server into the /addons directory
 3. Install using Typesetter's Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Available &rarr; Simple Button OR
-4. Upgrade installed 1.0.1 via Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Simple Button &rarr; Options &rarr; Upgrade
+4. Upgrade installed ver. 1.0.1 via Admin Toolbox &rarr; Plugins &rarr; Manage &rarr; Simple Button &rarr; Options &rarr; Upgrade
 
 ## License
 Dual licensed under the MIT or GPL Version 2 licenses.
